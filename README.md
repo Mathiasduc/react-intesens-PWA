@@ -5,15 +5,15 @@ The project has been bootstraped with [create-react-app](https://github.com/face
 #### Scritps:
 >npm run start
 
-Developement command to serve dev server on localhost:3000. Will auto-reload and parse code with react linter.
+Start a developement server on localhost:3000. Will auto-reload and parse code with react linter.
 
 >npm run build
 
-Webpack configuration will:
-transpile es6 to es5,
-bundle and minify all js and css files,
-hash the files for cache busting,
-and more.
+Start Webpack building tools, default configuration will:
+* transpile es6 to es5,
+* bundle and minify all js and css files,
+* hash the files for cache busting,
+* and more.
 
 >npm run deploy
 
@@ -35,8 +35,8 @@ We did not implement a proper and secured log-in system, we are simply saving th
 If a user try to access other URL without being logged in, he will be redirected to login page.
 
 ##### NewDeviceForm:
-For the id field we are testing the field with a regex that you can easily modify.
+We are testing the id field with a regex that you can easily modify.
 In the localization field we are using the autocomplete API from Google Maps for addresses suggestions, or user can choose to use geolocalisation. If user has the geolocalisation disabled, we prompt him to activating it then to reload the page (we did not found a better way). We need an internet connection to reverse search the postal address corresponding to the API GPS coordinates.
 
 ##### ConfirmationPage:
-to be finished...
+You can sinmulate a 403 error from the API by trying to register a device with the id of "E403"
