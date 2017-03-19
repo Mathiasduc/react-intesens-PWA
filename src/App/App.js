@@ -4,7 +4,6 @@ import {green500} from 'material-ui/styles/colors';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import { hashHistory } from 'react-router';
 import getMuiTheme from 'material-ui/styles/getMuiTheme';
-import DetectingOnline from '../DetectingOnline/DetectingOnline';
 
 /*Theme  is required for using material-ui library https://github.com/callemall/material-ui#usage */
 
@@ -109,7 +108,6 @@ class App extends React.Component {
    	return (
    		<MuiThemeProvider muiTheme={intesensTheme}>
       <div className="App">
-      <DetectingOnline />
       <Header newInstall={this.newInstall} logout={this.logout} logStatus={this.state.isLogged}/>
       {clonedChildren}
       </div>
